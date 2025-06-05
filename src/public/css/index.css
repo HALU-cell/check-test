@@ -1,0 +1,161 @@
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-form__heading h2 {
+    color: #8a7c69;
+}
+
+.form {
+    margin:  0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form__label--item {
+    color: 8a7c69;
+}
+
+.form__label--required {
+    color: #f3b6b7;
+}
+
+.form__group-content-name {
+    display: flex;
+    gap: 20px;
+}
+
+.form__group-content-tel {
+    display: flex;
+    gap: 10px;
+}
+
+label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+label::before,
+label::after {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+label::before {
+    background-color: #fff;
+    border: 1px solid #83756b;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+}
+
+label::after {
+    background-color: #83756b;
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    left: 7px;
+}
+
+input:checked + label::after {
+    opacity: 1;
+}
+
+input[name='gender'] {
+    position: absolute;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+}
+
+.form__group-content-gender {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.form__error {
+    margin-top: 4px;
+    padding: 0 6px;
+    border-radius: 3px;
+    background: #ededeb;
+    color: #eb6061;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+
+    appearance: none;
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    background: #8a7c69;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form__group-content-name {
+    justify-content: space-between;
+}
+
+.form__input--name {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input--name input {
+    width: 20em;
+    height: 40px;
+    margin: 0 10px;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ededeb;
+}
+
